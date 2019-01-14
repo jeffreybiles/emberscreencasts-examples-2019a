@@ -1,0 +1,11 @@
+<h2>Html Attributes</h2>
+
+{{cool-paragraph data-test="hello" class="blue" coolThing="using html attributes"}}
+
+<hr>
+
+<CoolParagraph data-test="hello" class="blue" @coolThing="using html attributes" />
+
+{{!-- Two advantages of angle-bracket invocation --}}
+{{!-- 1. It's easy to tell the difference between html attributes and named arguments in curly bracket invocation  --}}
+{{!-- 2. data-test and many other html attributes don't bind on the curly-bracket invocation unless we add `attributeBindings = ['data-test']` --}}

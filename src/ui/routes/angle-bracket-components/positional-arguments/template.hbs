@@ -1,0 +1,13 @@
+<h2>Do positional arguments still work?</h2>
+
+{{positional-arguments-paragraph 'Positional Arguments'}}
+
+<hr>
+
+<PositionalArgumentsParagraph />
+
+{{!-- Positional arguments are NOT allowed with angle bracket invocation.  Ember will throw an error. --}}
+{{!-- However, you can still pass stuff as named arguments: <PositionalArgumentsParagraph @coolThing='Positional Arguments' /> --}}
+
+{{!-- There are exceptions for some built-in components, such as link-to, using `@params={{array arg1 arg2 argn}}`. --}}
+{{!-- I do not know what they did to achieve this exception, but I doubt it's recommended for building your own component --}}

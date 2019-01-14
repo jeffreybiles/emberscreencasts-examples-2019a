@@ -1,0 +1,13 @@
+<h2>Is it one way?</h2>
+
+{{cool-paragraph coolThing=coolThing}}
+
+<p>Is curly brackets one-way data bound by default?</p>
+{{text-changer textToChange=coolThing}}
+
+<hr>
+
+<p>Is angle brackets one-way data bound by default?</p>
+<TextChanger @textToChange={{coolThing}} />
+
+{{!-- No, they are not bound by default.  This was something that was in the original spec, but was dropped --}}

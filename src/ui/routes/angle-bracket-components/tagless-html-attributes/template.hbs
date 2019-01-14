@@ -1,0 +1,11 @@
+<h2>Passing in html attributes for a tagless component</h2>
+
+{{tagless-cool-paragraph data-test="hello" class="blue" coolThing="Not this.  It doesn't work right."}}
+
+<hr>
+
+<TaglessCoolParagraph data-test="hello" class="blue" @coolThing="This is cool.  It works."/>
+
+{{!-- In TaglessCoolParagraph we use ...attributes to splat the html attributes on the paragraph tag --}}
+{{!-- Curly bracket invocation doesn't allow this.  You would have to use `class={{class}} data-test={{data-test}}`, then update it every time a new attribute is added --}}
+{{!-- This article goes into more depth on the behavior of ...attributes: https://davidtang.io/2018/09/25/what's-new-with-components-as-of-ember-3.4.html --}}

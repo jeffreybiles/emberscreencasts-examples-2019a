@@ -1,0 +1,15 @@
+<h1>Angle Bracket Components</h1>
+
+<LinkTo @tagName="button" @params={{array 'basics' 'angle-bracket-components.basics'}} />
+<LinkTo @tagName="button" @params={{array 'is-it-one-way' 'angle-bracket-components.is-it-one-way'}} />
+<LinkTo @tagName="button" @params={{array 'block-components' 'angle-bracket-components.block-component'}} />
+<LinkTo @tagName="button" @params={{array 'html-attributes' 'angle-bracket-components.html-attributes'}} />
+<LinkTo @tagName="button" @params={{array 'tagless-html-attributes' 'angle-bracket-components.tagless-html-attributes'}} />
+<LinkTo @tagName="button" @params={{array 'positional-arguments' 'angle-bracket-components.positional-arguments'}} />
+<LinkTo @tagName="button" @params={{array 'one-word-component-names' 'angle-bracket-components.one-word-component-names'}} />
+
+{{outlet}}
+
+{{!-- I've gotten link-to into angle bracket invocation, but note that it's more verbose and less clear than the curly bracket invocation --}}
+{{!-- For future videos, I will be using the regular link-to helper --}}
+{{!-- If you still want to do it this way, make sure to install the ember-array-helper addon: https://emberobserver.com/addons/ember-array-helper --}}

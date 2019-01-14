@@ -1,0 +1,31 @@
+<h2>Block Components</h2>
+<p>(Using ember-power-component)</p>
+
+<p>Select the next topic:</p>
+{{#power-select
+  selected=nextTopic
+  options=this.topicIdeas
+  onchange=(action (mut nextTopic))
+  as |name|
+}}
+  {{name}}
+{{/power-select}}
+
+<CoolParagraph @coolThing={{nextTopic}} />
+
+<hr>
+
+<p>Select the next topic2:</p>
+<PowerSelect
+  @selected={{nextTopic2}}
+  @options={{this.topicIdeas}}
+  @onchange={{action (mut nextTopic2)}}
+  as |name|
+>
+  {{name}}
+</PowerSelect>
+
+<CoolParagraph @coolThing={{nextTopic2}} />
+
+{{!-- The differences here are pretty self-explanatory. --}}
+{{!-- We're using the ember-power-select addon: https://ember-power-select.com/docs --}}
